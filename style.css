@@ -133,3 +133,69 @@ input, select, textarea {
 }
 
 #booking-modal input { width: 100%; margin: 8px 0; box-sizing: border-box; }
+.hero {
+    width: 100vw;
+    height: 40vh;
+    background: url('hero-placeholder.jpg') no-repeat center center/cover;
+    background-color: #333; /* Fallback color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 { margin: 0; font-size: 2rem; }
+#reviews {
+    padding: 40px 0;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+
+#reviews h2 { text-align: center; }
+
+.reviews-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+    -webkit-overflow-scrolling: touch; /* Smooth scroll for iOS */
+}
+
+.review-card {
+    flex: 0 0 80%; /* Show 80% of the card so the next one peaks out */
+    background: var(--bg);
+    padding: 30px;
+    border-radius: 15px;
+    scroll-snap-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.review-card p {
+    font-style: italic;
+    color: var(--text);
+    margin-bottom: 15px;
+}
+
+.review-card span {
+    font-weight: bold;
+    color: var(--primary);
+    display: block;
+}
+
+/* Hide scrollbar for clean look */
+.reviews-container::-webkit-scrollbar { display: none; }
