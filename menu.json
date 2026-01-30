@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Davao Punch",
+        "price": "₱120",
+        "description": "Refreshing local citrus blend with a hint of mint.",
+        "category": "Drinks"
+    },
+    {
+        "name": "Bistro Garlic Chicken",
+        "price": "₱280",
+        "description": "Crispy chicken tossed in roasted garlic and local spices.",
+        "category": "Mains"
+    },
+    {
+        "name": "Durian Cheesecake",
+        "price": "₱195",
+        "description": "Creamy, subtle, and iconic Davao dessert.",
+        "category": "Desserts"
+    }
+]

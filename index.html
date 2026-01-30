@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>We Got Cha Bistro | Davao City</title>
+    <link rel='stylesheet' href='style.css'><link rel='manifest' href='manifest.json'>
+</head>
+<body><div id='weekend-specials' style='display:none;'></div>
+    <header>
+        <nav>
+            <div class='logo'>WE GOT CHA</div>
+            <a href='tel:+63900000000' class='cta-btn'>Call Now</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Authentic Davao Flavors</h1><div id='bistro-status'></div>
+        <div id='menu-container'></div>
+    </main>
+            <section id='contact'>
+        <h2>Contact Us</h2>
+        <form id='contact-form'>
+            <input type='text' id='name' placeholder='Your Name' required>
+            <input type='email' id='email' placeholder='Email Address' required>
+            <select id='subject'>
+                <option value='Reservation'>Make a Reservation</option>
+                <option value='Feedback'>Feedback</option>
+                <option value='Inquiry'>General Inquiry</option>
+            </select>
+            <textarea id='message' placeholder='How can we help you?' rows='4' required></textarea>
+            <button type='submit' class='cta-btn' style='width:100%; border:none; cursor:pointer;'>Send Message</button>
+        </form>
+        <div id='form-status'></div>
+    </section>
+    <footer>
+        <p>📍 Visit us: Davao City, Philippines</p>
+        <div class="socials">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2026 We Got Cha Bistro</p>
+    </footer>    <div id='booking-modal' class='modal'>
+        <div class='modal-content'>
+            <span class='close-modal'>&times;</span>
+            <h2>Book a Table</h2>
+            <p>Secure your spot at We Got Cha Bistro!</p>
+            <input type='text' id='book-name' placeholder='Name' required>
+            <input type='number' id='book-guests' placeholder='Number of Guests' required>
+            <input type='datetime-local' id='book-time' required>
+            <button onclick='sendWhatsApp()' class='cta-btn' style='width:100%; border:none; margin-top:10px;'>Confirm via WhatsApp</button>
+        </div>
+    </div>
+    <button id='open-booking' class='floating-btn'>📅 Book Now</button>
+    <script src='script.js'></script>
+</body>
+</html>
