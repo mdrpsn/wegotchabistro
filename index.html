@@ -1,72 +1,122 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>We Got Cha Bistro | Davao City</title>
-    <link rel='stylesheet' href='style.css'><link rel='manifest' href='manifest.json'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- STAGING: remove the robots noindex line and the .staging banner before pointing the domain here -->
+  <meta name="robots" content="noindex">
+  <title>We Got Cha Bistro | Milk tea and takoyaki, Davao City</title>
+  <meta name="description" content="Milk tea, cream cheese tea, yogurt drinks, iced coffee and takoyaki at 75 Bonifacio St, Davao City. Order on foodpanda or call 0912 035 4573.">
+  <meta property="og:title" content="We Got Cha Bistro, Davao City">
+  <meta property="og:description" content="Milk tea and takoyaki on Bonifacio St. Order on foodpanda or drop by.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#D94126">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "We Got Cha Bistro",
+    "url": "https://wegotchabistro.com/",
+    "telephone": "+639120354573",
+    "servesCuisine": ["Milk tea", "Takoyaki", "Coffee"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "75 Bonifacio St, Poblacion District",
+      "addressLocality": "Davao City",
+      "postalCode": "8000",
+      "addressRegion": "Davao del Sur",
+      "addressCountry": "PH"
+    },
+    "sameAs": ["https://www.foodpanda.ph/restaurant/d2ab/we-got-cha-main"]
+  }
+  </script>
 </head>
-<body><div id='weekend-specials' style='display:none;'></div>
-    <header>
-        <nav>
-            <div class='logo'>WE GOT CHA</div>
-            <a href='tel:+63900000000' class='cta-btn'>Call Now</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Authentic Davao Flavors</h1><div id='bistro-status'></div>
-        <div id='menu-container'></div>
-    </main>
-                <section id='reviews'>
-        <h2>What People Are Saying</h2>
-        <div class='reviews-container'>
-            <div class='review-card'>
-                <p>"The best Durian Cheesecake in Davao! Perfect spot for a chill night."</p>
-                <span>- Maria S.</span>
-            </div>
-            <div class='review-card'>
-                <p>"Super mobile-friendly menu. Ordering for pickup was so easy via WhatsApp."</p>
-                <span>- Juan D.</span>
-            </div>
-            <div class='review-card'>
-                <p>"Love the vibe. The garlic chicken is a must-try!"</p>
-                <span>- Sarah L.</span>
-            </div>
-        </div>
+<body>
+  <div class="staging">Draft for review. Not live yet.</div>
+
+  <header class="top">
+    <a class="wordmark" href="#">We Got Cha!</a>
+    <a class="btn btn-small" href="https://www.foodpanda.ph/restaurant/d2ab/we-got-cha-main">Order</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">75 Bonifacio St, Davao City</p>
+      <h1>Milk tea and takoyaki, made to order.</h1>
+      <p class="lede">Cream cheese tea, yogurt drinks, soda pops, iced coffee, and takoyaki cooked fresh for every order.</p>
+      <div class="actions">
+        <a class="btn" href="https://www.foodpanda.ph/restaurant/d2ab/we-got-cha-main">Order on foodpanda</a>
+        <a class="btn btn-ghost" href="tel:+639120354573">Call 0912 035 4573</a>
+      </div>
+      <div class="pearls" aria-hidden="true"></div>
     </section>
-    <section id='contact'>
-        <h2>Contact Us</h2>
-        <form id='contact-form'>
-            <input type='text' id='name' placeholder='Your Name' required>
-            <input type='email' id='email' placeholder='Email Address' required>
-            <select id='subject'>
-                <option value='Reservation'>Make a Reservation</option>
-                <option value='Feedback'>Feedback</option>
-                <option value='Inquiry'>General Inquiry</option>
-            </select>
-            <textarea id='message' placeholder='How can we help you?' rows='4' required></textarea>
-            <button type='submit' class='cta-btn' style='width:100%; border:none; cursor:pointer;'>Send Message</button>
-        </form>
-        <div id='form-status'></div>
+
+    <section class="menu" id="menu">
+      <h2>What we serve</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Milk tea</h3>
+          <p>Classic, Wintermelon, Taro, Okinawa, Hokkaido, Matcha, Red Velvet, Lychee.</p>
+        </article>
+        <article class="card">
+          <h3>Cream cheese tea</h3>
+          <p>Matcha, Wintermelon, Red Velvet, Strawberry, Okinawa and more, with a cream cheese top.</p>
+        </article>
+        <article class="card">
+          <h3>Oreo series</h3>
+          <p>Oreo milk teas and cream cheese teas. Try the Cookies &amp; Cream Overload.</p>
+        </article>
+        <article class="card">
+          <h3>Yogurt drinks</h3>
+          <p>Mango, Mixed Berries, Peach Mango, Raspberry Lychee, Kiwi. Made with live cultures.</p>
+        </article>
+        <article class="card">
+          <h3>Soda pops</h3>
+          <p>Strawberry, Blueberry, Green Apple, Passion Fruit, Lychee, Ocean Breeze.</p>
+        </article>
+        <article class="card">
+          <h3>Iced coffee</h3>
+          <p>Spanish Latte, Salted Caramel, Caramel Macchiato, Americano, Strawberry Matcha.</p>
+        </article>
+        <article class="card card-wide">
+          <h3>Takoyaki</h3>
+          <p>Chizu, shrimp, ham, squid or quail egg, with or without cheese. Cooked fresh each order, so give it a few minutes.</p>
+        </article>
+      </div>
+      <p class="note">Full menu and current prices are on <a href="https://www.foodpanda.ph/restaurant/d2ab/we-got-cha-main">foodpanda</a>.</p>
     </section>
-    <footer>
-        <p>📍 Visit us: Davao City, Philippines</p>
-        <div class="socials">
-            <a href="#">Facebook</a> | <a href="#">Instagram</a>
-        </div>
-        <p>&copy; 2026 We Got Cha Bistro</p>
-    </footer>    <div id='booking-modal' class='modal'>
-        <div class='modal-content'>
-            <span class='close-modal'>&times;</span>
-            <h2>Book a Table</h2>
-            <p>Secure your spot at We Got Cha Bistro!</p>
-            <input type='text' id='book-name' placeholder='Name' required>
-            <input type='number' id='book-guests' placeholder='Number of Guests' required>
-            <input type='datetime-local' id='book-time' required>
-            <button onclick='sendWhatsApp()' class='cta-btn' style='width:100%; border:none; margin-top:10px;'>Confirm via WhatsApp</button>
-        </div>
-    </div>
-    <button id='open-booking' class='floating-btn'>📅 Book Now</button>
-    <script src='script.js'></script>
+
+    <section class="visit" id="visit">
+      <h2>Visit</h2>
+      <dl>
+        <div><dt>Address</dt><dd>75 Bonifacio St, Poblacion District, Davao City</dd></div>
+        <div><dt>Phone</dt><dd><a href="tel:+639120354573">0912 035 4573</a></dd></div>
+        <!-- TODO: add opening hours once confirmed -->
+      </dl>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=We+Got+Cha+Bistro+75+Bonifacio+St+Davao+City">Get directions</a>
+    </section>
+
+    <section class="branches" id="branches">
+      <h2>Other branches</h2>
+      <p>Also on foodpanda:</p>
+      <ul>
+        <li><a href="https://www.foodpanda.ph/restaurant/y5vc/we-got-cha-matina">Matina</a></li>
+        <li><a href="https://www.foodpanda.ph/restaurant/g5q5/we-got-cha-mintal">Mintal</a></li>
+        <li><a href="https://www.foodpanda.ph/restaurant/rcys/we-got-cha-marfori">Marfori</a></li>
+        <li><a href="https://www.foodpanda.ph/restaurant/rcfj/we-got-cha-sasa">Sasa</a></li>
+        <li><a href="https://www.foodpanda.ph/restaurant/qz48/we-got-cha-toril">Toril</a></li>
+        <li><a href="https://www.foodpanda.ph/restaurant/vn7a/we-got-cha-panabo">Panabo</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 We Got Cha Bistro, Davao City</p>
+  </footer>
 </body>
 </html>
