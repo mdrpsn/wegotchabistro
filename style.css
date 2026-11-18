@@ -131,22 +131,16 @@ section h2 { font-size: 1.9rem; margin: 0 0 20px; }
 .visit dt { font-weight: 700; color: var(--secondary); font-size: 0.9rem; }
 .visit dd { margin: 2px 0 0; }
 
-.branches ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.branches li a {
+.branch .hours { color: var(--text); font-weight: 600; margin: 0 0 10px; }
+.branch .links { margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.branch .links a {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 6px 14px;
   border: 1px solid var(--line);
-  background: var(--card);
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.95rem;
 }
 
 footer {
