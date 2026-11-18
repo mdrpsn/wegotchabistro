@@ -43,7 +43,7 @@ h1, h2, h3, .wordmark { font-family: var(--display); line-height: 1.1; }
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
-  background: rgba(249, 247, 242, 0.95);
+  background: var(--bg);
   border-bottom: 1px solid var(--line);
 }
 
@@ -107,6 +107,7 @@ main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
 }
 
 section h2 { font-size: 1.9rem; margin: 0 0 20px; }
+section[id] { scroll-margin-top: 64px; }
 
 .menu, .visit, .branches { padding: 40px 0; border-top: 1px solid var(--line); }
 
